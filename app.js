@@ -1,5 +1,9 @@
 window.APP_CONFIG = window.APP_CONFIG || {
+<<<<<<< HEAD
   apiBaseUrl: "https://how-long-ago-counter-api-production.up.railway.app/",
+=======
+  apiBaseUrl: "",
+>>>>>>> parent of 0bc5c15 (3rd commits)
 };
 
 const config = {
