@@ -79,7 +79,7 @@ function escapeHtml(value) {
 }
 
 async function fetchDates() {
-  const remoteUrl = config.apiBaseUrl ? `https://how-long-ago-counter-api-production.up.railway.app/data/dates.json` : null;
+  const remoteUrl = config.apiBaseUrl ? `${config.apiBaseUrl}/data/dates.json` : null;
 
   if (remoteUrl) {
     const response = await fetch(remoteUrl);
