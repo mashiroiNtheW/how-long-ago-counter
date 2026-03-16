@@ -1,0 +1,12 @@
+[
+  {
+    "id": "sample-launch",
+    "label": "Sample project launch",
+    "date": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "sample-learning",
+    "label": "Started learning JavaScript",
+    "date": "2024-06-15T09:30:00.000Z"
+  }
+]

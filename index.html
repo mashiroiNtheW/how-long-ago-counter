@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Long Ago Counter</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">GitHub Pages frontend</p>
+      <h1>How long ago?</h1>
+      <p class="intro">
+        Track dates and show how much time has passed. Set an API URL to make this page read from your writable backend.
+      </p>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Tracked dates</h2>
+        <button id="refresh-button" type="button">Refresh</button>
+      </div>
+      <p id="status-message" class="status" aria-live="polite"></p>
+      <div id="counter-list" class="counter-list"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Add a date</h2>
+      <p class="muted">
+        This form posts to your API. On GitHub Pages, set <code>window.APP_CONFIG.apiBaseUrl</code> in <code>docs/app.js</code>.
+      </p>
+      <form id="date-form" class="date-form">
+        <label>
+          Label
+          <input id="label-input" name="label" type="text" maxlength="80" placeholder="Started learning JavaScript" required>
+        </label>
+        <label>
+          Date and time
+          <input id="date-input" name="date" type="datetime-local" required>
+        </label>
+        <button type="submit">Add counter</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
