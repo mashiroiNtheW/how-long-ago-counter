@@ -75,7 +75,7 @@ function escapeHtml(value) {
 }
 
 async function fetchDates() {
-  const remoteUrl = config.apiBaseUrl ? `${config.apiBaseUrl}/api/data/dates.json` : null;
+  const remoteUrl = config.apiBaseUrl ? `${config.apiBaseUrl}/data/dates.json` : null;
 
   if (remoteUrl) {
     const response = await fetch(remoteUrl);
