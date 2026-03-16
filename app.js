@@ -1,5 +1,5 @@
 window.APP_CONFIG = window.APP_CONFIG || {
-  apiBaseUrl: "",
+  apiBaseUrl: "how-long-ago-counter-api-production.up.railway.app",
 };
 
 const config = {
