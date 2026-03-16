@@ -122,7 +122,7 @@ async function addDate(event) {
   setStatus("Saving date...");
 
   try {
-    const response = await fetch(`${config.apiBaseUrl}/api/dates`, {
+    const response = await fetch(`${config.apiBaseUrl}/data/dates`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
