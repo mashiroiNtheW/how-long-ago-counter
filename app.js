@@ -1,9 +1,5 @@
 window.APP_CONFIG = window.APP_CONFIG || {
-<<<<<<< HEAD
   apiBaseUrl: "https://dploy-production-e374.up.railway.app",
-=======
-  apiBaseUrl: "",
->>>>>>> parent of 0bc5c15 (3rd commits)
 };
 
 const config = {
@@ -79,7 +75,7 @@ function escapeHtml(value) {
 }
 
 async function fetchDates() {
-  const remoteUrl = config.apiBaseUrl ? `${config.apiBaseUrl}/data/dates.json` : null;
+  const remoteUrl = config.apiBaseUrl ? `${config.apiBaseUrl}/api/dates` : null;
 
   if (remoteUrl) {
     const response = await fetch(remoteUrl);
@@ -126,7 +122,7 @@ async function addDate(event) {
   setStatus("Saving date...");
 
   try {
-    const response = await fetch(`${config.apiBaseUrl}/data/dates`, {
+    const response = await fetch(`${config.apiBaseUrl}/api/dates`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
